@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './user/user.module';
 import { FloorModule } from './floor/floor.module';
+import { PositionModule } from './position/position.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { FloorModule } from './floor/floor.module';
     }),
     AuthModule,
     UserModule,
-    FloorModule
+    FloorModule,
+    PositionModule
 
   ],
   controllers: [],
